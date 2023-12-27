@@ -54,4 +54,33 @@
     <p>Remember that the cryptocurrency market is speculative, so do your research and invest wisely.</p>
 </body>
 </html>
+const apiEndpoints = {
+  accounts: {
+    href: "https://api.mainnet.minepi.com/accounts{?signer, sponsor, asset, liquidity_pool, cursor, limit, order}",
+    templated: true
+  },
+  account_transactions: {
+    href: "https://api.mainnet.minepi.com/accounts/{account_id}/transactions{?cursor, limit, order}",
+    templated: true
+  },
+  claimable_balances: {
+    href: "https://api.mainnet.minepi.com/claimable_balances{?asset, claimant, sponsor}",
+    templated: true
+  },
+  assets: {
+    href: "https://api.mainnet.minepi.com/assets{?asset_code, asset_issuer, cursor, limit, order}",
+    templated: true
+  },
+  effects: {
+    href: "https://api.mainnet.minepi.com/effects{?cursor, limit, order}",
+    templated: true
+  },
+  fee_stats: {
+    href: "https://api.mainnet.minepi.com/fee_stats"
+  },
+  ledger: {
+    href: "https://api.mainnet.minepi.com/ledger/{sequence}",
+    templated: true
+  }
+};
 
